@@ -32,6 +32,6 @@ def move(board, index, character = "X")
 end
 
 
-
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-puts move(board, 1, "X")
+# 
+# board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+# puts move(board, 1, "X")
