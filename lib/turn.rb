@@ -19,7 +19,6 @@ def valid_move?(board, index)
   if index > board.length - 1 || index < 0
     return false
   end
-
   !position_taken?(board, index)
 end
 
@@ -35,4 +34,4 @@ end
 
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-puts valid_move?(board, -1)
+puts move(board, index, character = "X")
