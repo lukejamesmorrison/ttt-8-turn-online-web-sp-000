@@ -27,11 +27,11 @@ def move(board, index, character = "X")
     if valid_move?(board, index)
       board[index] = character
     end
-    display_board(board)
   end
+  display_board(board)
 end
 
 
-# 
+#
 # board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 # puts move(board, 1, "X")
