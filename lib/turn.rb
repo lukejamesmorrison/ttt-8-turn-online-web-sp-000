@@ -37,4 +37,5 @@ def turn(board)
   index = input_to_index(gets.strip)
 
   move(board, index)
+  turn(board)
 end
