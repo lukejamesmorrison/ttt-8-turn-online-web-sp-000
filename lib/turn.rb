@@ -29,5 +29,6 @@ def move(board, index, character = "X")
   display_board(board)
 end
 
-def turn
+def turn(turn)
+  
 end
