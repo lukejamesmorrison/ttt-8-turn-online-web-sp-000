@@ -23,10 +23,8 @@ def valid_move?(board, index)
 end
 
 def move(board, index, character = "X")
-  if board[index] === " "
-    if valid_move?(board, index)
-      board[index] = character
-    end
+  if valid_move?(board, index)
+    board[index] = character
   end
   display_board(board)
 end
