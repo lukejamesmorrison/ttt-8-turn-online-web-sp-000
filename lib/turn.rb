@@ -16,7 +16,7 @@ end
 
 def valid_move?(board, index)
   # If move is not on board
-  if index > board.length - 1 && index >= 0
+  if index > board.length - 1
     return false
   end
 
