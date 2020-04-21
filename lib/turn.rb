@@ -35,4 +35,4 @@ end
 
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-puts valid_move?(board, 0)
+puts valid_move?(board, -1)
