@@ -23,10 +23,13 @@ def valid_move?(board, index)
 end
 
 def move(board, index, character = "X")
-  if valid_move?(board, index)
+  is_valid = valid_move?(board, index)
+  if is_valid
     board[index] = character
   end
   display_board(board)
+  return is_valid
+
 end
 
 def turn(board)
