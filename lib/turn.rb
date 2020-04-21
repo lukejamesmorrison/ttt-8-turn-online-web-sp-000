@@ -28,3 +28,6 @@ def move(board, index, character = "X")
   end
   display_board(board)
 end
+
+def turn
+end
