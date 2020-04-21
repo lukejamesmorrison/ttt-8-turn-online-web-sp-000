@@ -19,9 +19,6 @@ def move(board, index, character = "X")
   end
 end
 
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-puts valid_move?(board, 0)
-
 def valid_move?(board, index)
   # If move is not on board
   if index > board.length - 1 && index >= 0
@@ -30,6 +27,9 @@ def valid_move?(board, index)
 
   !position_taken?(board, index)
 end
+
+board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+puts valid_move?(board, 0)
 
 def position_taken?(board, index)
   !(board[index] == " " || board[index] == "" || board[index] == nil)
