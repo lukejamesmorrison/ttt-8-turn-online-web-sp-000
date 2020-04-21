@@ -14,6 +14,15 @@ def input_to_index(input)
   input.to_i - 1
 end
 
+def valid_move?(board, index)
+  # If move is not on board
+  if index > board.length - 1 && index >= 0
+    return false
+  end
+
+  !position_taken?(board, index)
+end
+
 def move(board, index, character = "X")
   if board[index] === " "
     if valid_move?
@@ -23,14 +32,7 @@ def move(board, index, character = "X")
   end
 end
 
-def valid_move?(board, index)
-  # If move is not on board
-  if index > board.length - 1 && index >= 0
-    return false
-  end
 
-  !position_taken?(board, index)
-end
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 puts valid_move?(board, 0)
