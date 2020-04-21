@@ -31,5 +31,5 @@ end
 
 
 #
-# board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-# puts move(board, 1, "X")
+board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+puts move(board, 1, "X")
